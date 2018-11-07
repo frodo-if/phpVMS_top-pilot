@@ -1,6 +1,6 @@
 phpVMS module to extract monthly flight statistics for individual pilots from your phpVMS based virtual airline.
 
-This module was orginaly created by by:
+This module was orginaly created by:
 simpilot - David Clark
 www.simpilotgroup.com
 www.david-clark.net
