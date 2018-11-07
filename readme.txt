@@ -11,8 +11,9 @@ www.infinite-airlines.org
 www.artemfrolov.co.uk
 af@maksis.by
 
+-----
 Install:
-
+-----
 -Download the attached package.
 -unzip the package and place the files as structured in your root phpVMS install.
 
@@ -48,6 +49,11 @@ Excluding PIREPS that are not accepted yet.
 TopPilot.php line 52.
 
 Uncomment the trailing section and the module will not include unapproved PIREPS. Doing this will cause the module not to display any newly accepted PIREPS in the TopPilot data listings until after another PIREP is filed  although you can refresh the stats at anytime using /index.php/TopPilot/refresh_pilot_stats
+
+-----
+Also, if the database prefix that you are using is not "phpvms_", then change in toppilot.sql first line to 
+CREATE TABLE IF NOT EXISTS `phpvms_top_flights` (
+-----
 
 Although this script carries no limits of use a link back to www.simpilotgroup.com and www.infinite-airlines.org would be greatly appreciated!
 
