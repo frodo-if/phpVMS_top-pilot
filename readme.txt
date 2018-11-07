@@ -51,7 +51,7 @@ TopPilot.php line 52.
 Uncomment the trailing section and the module will not include unapproved PIREPS. Doing this will cause the module not to display any newly accepted PIREPS in the TopPilot data listings until after another PIREP is filed  although you can refresh the stats at anytime using /index.php/TopPilot/refresh_pilot_stats
 
 -----
-Also, if the database prefix that you are using is not "phpvms_", then change in toppilot.sql first line to 
+Also, if the database prefix that you are using is not "phpvms_", then change in top_flight.sql first line to 
 CREATE TABLE IF NOT EXISTS `phpvms_top_flights` (
 -----
 
