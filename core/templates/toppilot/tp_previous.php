@@ -44,7 +44,7 @@ echo '<center>';
     foreach ($topflights as $top) {
         $pilot = PilotData::GetPilotData($top->pilot_id);
         echo '<tr>';
-        echo '<td><a href="http://connected.easyjet.infinite-airlines.org/index.php/profile/view/'.$pilot->pilotid.'">'.$pilot->firstname.' '.$pilot->lastname.'</a> - '.PilotData::GetPilotCode($pilot->code, $pilot->pilotid).'</td>';
+        echo '<td><a href="/index.php/profile/view/'.$pilot->pilotid.'">'.$pilot->firstname.' '.$pilot->lastname.'</a> - '.PilotData::GetPilotCode($pilot->code, $pilot->pilotid).'</td>';
         echo '<td align="center">'.$top->flights.'</td>';
         echo '</tr>';
     }
@@ -68,7 +68,7 @@ echo '<center>';
     foreach ($tophours as $top) {
         $pilot = PilotData::GetPilotData($top->pilot_id);
         echo '<tr>';
-        echo '<td><a href="http://connected.easyjet.infinite-airlines.org/index.php/profile/view/'.$pilot->pilotid.'">'.$pilot->firstname.' '.$pilot->lastname.'</a> - '.PilotData::GetPilotCode($pilot->code, $pilot->pilotid).'</td>';
+        echo '<td><a href="/index.php/profile/view/'.$pilot->pilotid.'">'.$pilot->firstname.' '.$pilot->lastname.'</a> - '.PilotData::GetPilotCode($pilot->code, $pilot->pilotid).'</td>';
         echo '<td align="center">'.$top->hours.'</td>';
         echo '</tr>';
     }
@@ -90,7 +90,7 @@ echo '<center>';
     foreach ($topmiles as $top) {
         $pilot = PilotData::GetPilotData($top->pilot_id);
         echo '<tr>';
-        echo '<td><a href="http://connected.easyjet.infinite-airlines.org/index.php/profile/view/'.$pilot->pilotid.'">'.$pilot->firstname.' '.$pilot->lastname.'</a> - '.PilotData::GetPilotCode($pilot->code, $pilot->pilotid).'</td>';
+        echo '<td><a href="/index.php/profile/view/'.$pilot->pilotid.'">'.$pilot->firstname.' '.$pilot->lastname.'</a> - '.PilotData::GetPilotCode($pilot->code, $pilot->pilotid).'</td>';
         echo '<td align="center">'.$top->miles.'</td>';
         echo '</tr>';
     }
