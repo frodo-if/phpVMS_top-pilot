@@ -52,7 +52,9 @@ Uncomment the trailing section and the module will not include unapproved PIREPS
 
 -----
 Also, if the database prefix that you are using is not "phpvms_", then change in top_flight.sql first line to 
-CREATE TABLE IF NOT EXISTS `phpvms_top_flights` (
+CREATE TABLE IF NOT EXISTS `DbPrefix_top_flights` (
+
+where DbPrefix is your database prefix
 -----
 
 Although this script carries no limits of use a link back to www.simpilotgroup.com and www.infinite-airlines.org would be greatly appreciated!
